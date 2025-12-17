@@ -52,7 +52,6 @@ fig_sc = px.scatter(
     title=f"Scatter: {x} vs {y}"
 )
 
-# OPTIONAL: linie de trend simpla (regresie liniara) cu numpy, fara statsmodels
 if len(tmp) >= 2 and tmp[x].nunique() > 1:
     try:
         m, b = np.polyfit(tmp[x], tmp[y], 1)
